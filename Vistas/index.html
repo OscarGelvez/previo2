@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content= "width=device-width, initial-scale=1.0, maximum-scale=2" />
+	<title>AcademicApp</title>
+<!--<link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">  
+
+<script src="js/jquery-2.2.3.js"></script>
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+</head>
+<body>
+
+	<div data-role="page" data-theme="b" id="pag1">
+
+    <div data-role="header">
+            <h1>AcademicApp</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+
+      <form method="post" action="logica.php">
+    
+        <h3 class="centerText">Iniciar Sesión</h3>
+        <span class="centerImg">
+          <img src="img/logo.png" class="imagen">
+        </span>
+        <br>
+         <label for="user" class="label">Documento de Identificación:</label>
+      <input type="number" name="i.user" id="user" value="" data-mini="true" class="centerText" data-clear-btn="true" />
+        <br>
+      <label for="Pass" class="label">Contraseña:</label>
+      <input type="Password" name="i.pass" id="Pass" value="" data-mini="true" class="centerText" data-clear-btn="true"/>
+      <br>
+      <button type="submit" data-theme="b" data-transition="fade">Entrar</button>
+      <br><br>
+
+      <a href="Aplicacion.html" rel="external">Saltar Logguin. debug</a>
+      <a href="#pag2" data-transition="fade" class="centerText">¿Aún no esta Registrado?</a>
+
+      </form>
+      
+    </div>
+    
+    <div data-role="footer">
+            <h5>AcademicApp UFPS Todos los derechos reservados 2016</h5>
+        </div>
+    </div>
+
+<!-- //////////////////////////////////////Pag. Registro////////////////////////////////////////// -->
+
+<div data-role="page" data-theme="b" id="pag2">
+
+    <div data-role="header">
+            <h1>AcademicApp</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+
+      <form method="post" action="logica.php">
+    
+        <h2 class="centerText">Registro</h2>
+        
+        <br>
+        <label for="nombre" class="label">Nombre: </label>
+      <input type="text" name="i.nombre" id="nombre" value="" data-mini="true" class="centerText" data-clear-btn="true" />
+        <br>
+
+        <label for="apeliido" class="label">Apellido: </label>
+      <input type="text" name="i.apellido" id="apellido" value="" data-mini="true" class="centerText" data-clear-btn="true" />
+      <br>
+
+         <label for="user" class="label">Documento de Identificación:</label>
+      <input type="number" name="i.user" id="user" value="" data-mini="true" class="centerText" data-clear-btn="true" />
+        <br>
+      <label for="Pass" class="label">Contraseña:</label>
+      <input type="Password" name="i.pass" id="Pass" value="" data-mini="true" class="centerText" data-clear-btn="true"/>
+      <br>
+<label for="IE" class="label">Documento de Identificación:</label>
+      <select id="selectIE" id="IE">
+  <option value="volvo">Selecciona el colegio</option>
+  <option value="saab">Colegio 1</option>
+  <option value="mercedes">Colegio 2</option>
+  <option value="audi">Colegio 3</option>
+</select>
+      <br>
+      <button type="submit" data-theme="b" data-transition="fade">Registrar</a></button>
+      </form>
+      
+    </div>
+    
+    <div data-role="footer">
+            <h5>AcademicApp UFPS Todos los derechos reservados 2016</h5>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
